@@ -1,0 +1,66 @@
+.aboutme {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2em;
+   margin: 3em 0;
+
+   @include point-up(large) {
+      flex-direction: row;
+   }
+
+   &_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      @include point-up(medium) {
+         flex: 1;
+      }
+
+      img {
+         width: 80%;
+
+         @include point-up(medium) {
+            width: 100%;
+         }
+      }
+   }
+
+   &_content {
+      text-align: center;
+      color: $colorBlue;
+      font-family: $font-text;
+      margin-top: 1em;
+
+      @include point-up(medium) {
+         margin-top: 0;
+         text-align: left;
+         flex: 1;
+      }
+
+      h1 {
+         font-family: $font-head;
+         font-size: 2rem;
+         font-weight: 700;
+         margin: 0.5em 0;
+         color: $thickBlue;
+
+         @include point-up(medium) {
+            font-size: 2.5rem;
+         }
+      }
+
+      p {
+         font-size: 1rem;
+         line-height: 1.5;
+         letter-spacing: 1px;
+
+         @include point-up(medium) {
+            font-size: 1.2rem;
+         }
+      }
+   }
+}

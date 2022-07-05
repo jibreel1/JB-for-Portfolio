@@ -1,0 +1,90 @@
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: $font-text;
+   padding-block: 1em;
+   // z-index: 2;
+   background-color: $backgroundColor;
+
+   @include point-up(large) {
+      padding-block: 2em;
+   }
+
+   img {
+      //   position: fixed;
+      cursor: pointer;
+      width: 50px;
+   }
+
+   &_links {
+      align-items: center;
+      list-style: none;
+      gap: 1.5em;
+      color: $colorBlue;
+      display: none;
+
+      @include point-up(large) {
+         display: flex;
+      }
+
+      li {
+         position: relative;
+         cursor: pointer;
+         font-size: 1.3em;
+         letter-spacing: 1.2px;
+
+         &::before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            top: 30px;
+            left: 0px;
+            background-color: $colorBlue;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(0);
+         }
+
+         &:hover {
+            &::before {
+               transform: scale(1);
+            }
+         }
+
+         &:nth-child(2),
+         &:nth-child(3) {
+            &::before {
+               width: 90px;
+            }
+         }
+      }
+
+      li:last-child {
+         color: $colorWhite;
+         background-color: $colorBlue;
+         padding: 0.8em 1.2em;
+         border-radius: 5px;
+
+         &::before {
+            content: none;
+         }
+      }
+   }
+
+   &_ham {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+
+      @include point-up(large) {
+         display: none;
+      }
+
+      svg {
+         color: $colorBlue;
+         font-size: 2.5em;
+      }
+   }
+}

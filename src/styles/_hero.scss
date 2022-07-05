@@ -1,0 +1,109 @@
+.hero {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2em;
+   padding-block: 100px;
+   //    position: absolute;
+   //    top: 0;
+   //    z-index: -1;
+   background-color: $backgroundColor;
+   border-bottom-right-radius: 200px;
+
+   @include point-up(large) {
+      flex-direction: row-reverse;
+   }
+
+   &_content {
+      text-align: center;
+      color: $colorBlue;
+      font-family: $font-text;
+      margin-top: 1em;
+
+      @include point-up(medium) {
+         margin-top: 0;
+         text-align: left;
+         flex: 1;
+      }
+
+      span {
+         font-size: 2rem;
+      }
+
+      h1 {
+         font-family: $font-head;
+         font-size: 3rem;
+         font-weight: 700;
+         margin: 0.5em 0;
+         color: $thickBlue;
+
+         @include point-up(medium) {
+            font-size: 4rem;
+         }
+
+         span {
+            display: block;
+            font-size: 2rem;
+            font-weight: 500;
+            padding-top: 0.5em;
+
+            @include point-up(medium) {
+               font-size: 3rem;
+               padding-top: 0;
+            }
+         }
+      }
+
+      p {
+         font-size: 1rem;
+         line-height: 1.5;
+         letter-spacing: 1px;
+
+         @include point-up(medium) {
+            font-size: 1.2rem;
+         }
+      }
+
+      a {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: nowrap;
+         gap: 0.5em;
+         padding: 0.5em 1em;
+         margin-top: 1em;
+         font-size: 1.5rem;
+         border-bottom: 1px solid $colorBlue;
+         border-left: 1px solid $colorBlue;
+         font-weight: 700;
+         transition: all 0.3s ease-in-out;
+
+         @include point-up(medium) {
+            width: 250px;
+         }
+
+         &:hover {
+            border: none;
+            box-shadow: 0 3px 6px $color-shadow;
+         }
+      }
+   }
+
+   &_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      @include point-up(medium) {
+         flex: 1;
+      }
+      img {
+         width: 80%;
+
+         @include point-up(medium) {
+            width: 100%;
+         }
+      }
+   }
+}

@@ -1,0 +1,89 @@
+.skills {
+   background-color: $backgroundColor;
+   padding-block: 80px;
+   color: $colorBlue;
+   border-top-right-radius: 200px;
+
+   h1 {
+      text-align: center;
+      font-family: $font-head;
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0.5em 0;
+      color: $thickBlue;
+
+      @include point-up(medium) {
+         font-size: 2.5rem;
+      }
+   }
+
+   &_card {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2em;
+      margin-top: 1em;
+      font-family: $font-text;
+
+      @include point-up(large) {
+         flex-direction: row;
+         gap: 4em;
+      }
+
+      .card {
+         //  width: 400px;
+         //  min-width: 375px;
+         max-width: 450px;
+         padding: 2em 1em;
+         box-shadow: 0 3px 6px $color-shadow;
+         border-radius: 8px;
+         text-align: center;
+
+         @include point-up(large) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 450px;
+            height: 500px;
+         }
+
+         h3 {
+            margin-bottom: 0.5em;
+            color: $thickBlue;
+            font-size: 1.5rem;
+         }
+
+         h4 {
+            margin-bottom: 0.5em;
+            color: $thickBlue;
+            font-size: 1.5rem;
+         }
+
+         p {
+            font-size: 1rem;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            margin-bottom: 0.5em;
+            max-width: 400px;
+
+            @include point-up(medium) {
+               font-size: 1.2rem;
+            }
+         }
+
+         img {
+            width: 300px;
+            margin-bottom: 1em;
+         }
+      }
+   }
+
+   svg {
+      font-size: 2em;
+   }
+
+   svg:not(:last-child) {
+      margin-right: 0.5em;
+   }
+}
