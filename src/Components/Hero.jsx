@@ -23,6 +23,7 @@ const Hero = () => {
             <a
                href="https://www.linkedin.com/in/jibreel-osunkoya/"
                target="_blank"
+               rel="noopener noreferrer"
             >
                <FaLinkedin fontSize="1.5em" />
                <p>Hit me up!</p>
