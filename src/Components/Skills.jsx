@@ -1,6 +1,6 @@
 import React from "react";
 import Images from "../constants/images";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss, SiMaterialui } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { FaReact, FaSass } from "react-icons/fa";
 import { BsBootstrapFill, BsGoogle } from "react-icons/bs";
@@ -22,6 +22,7 @@ const Skills = () => {
                   <DiJavascript1 />
                   <FaReact />
                   <SiTailwindcss />
+                  <SiMaterialui />
                   <FaSass />
                   <BsBootstrapFill />
                   <BsGoogle />
