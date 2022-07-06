@@ -58,6 +58,10 @@
          line-height: 1.5;
          letter-spacing: 1px;
 
+         code {
+            font-weight: bold;
+         }
+
          @include point-up(medium) {
             font-size: 1.2rem;
          }

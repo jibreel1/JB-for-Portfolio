@@ -18,23 +18,23 @@
 
    &_container {
       display: grid;
-
+      justify-content: center;
       gap: 2em;
 
       @include point-up(large) {
-         grid-template-columns: repeat(3, 1fr);
+         grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
       }
    }
    &_card {
+      width: 100%;
       display: flex;
       justify-content: flex-start;
       //   align-items: center;
       flex-direction: column;
       background-color: $backgroundColor;
       gap: 1.5em;
-      border-bottom-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-      height: 600px;
+      border-radius: 8px;
+      height: 100%;
       transition: transform 0.5s ease-in-out;
 
       &:hover {
@@ -42,6 +42,8 @@
       }
 
       img {
+         border-top-right-radius: 8px;
+         border-top-left-radius: 8px;
          width: 100%;
       }
 
@@ -68,11 +70,18 @@
 
       &_preview {
          display: flex;
-         justify-content: space-between;
-         align-items: center;
+         justify-content: flex-start;
+         align-items: flex-start;
+         flex-direction: column;
+         gap: 1em;
          padding: 0 1em 1em 2em;
          line-height: 1.5;
          letter-spacing: 1px;
+
+         @include point-up(large) {
+            justify-content: space-between;
+            flex-direction: row;
+         }
 
          a {
             display: flex;
