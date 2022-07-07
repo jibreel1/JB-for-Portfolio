@@ -8,8 +8,8 @@ const Aboutme = () => {
             <img src={Images.hero2} alt="" />
          </div>
          <div className="aboutme_content">
-            <h1>How it all started...</h1>
-            <p>
+            <h1>About me...</h1>
+            {/* <p>
                I've always been fascinated about how things are built, coming
                together to form a single piece.
             </p>
@@ -18,7 +18,8 @@ const Aboutme = () => {
                intrigued about how it was done. He then showed me the basic
                <code> h1 tag</code> using notepad. Ever since, I never stopped
                wanting to know more.
-            </p>
+            </p> */}
+            <p>I'm Osunkoya Jibreel</p>
             <p>
                As a freelance developer, I have created exciting websites for
                people and businesses there by making them prosper.

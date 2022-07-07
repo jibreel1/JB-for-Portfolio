@@ -13,11 +13,11 @@ const ProjectCard = ({
          <p className="project_card_text">{subtitle}</p>
       </div>
       <div className="project_card_preview">
-         <a href={preview}>
+         <a href={preview} target="_blank" rel="noopener noreferrer">
             <BiLink />
             Live Preview
          </a>
-         <a href={github}>
+         <a href={github} target="_blank" rel="noopener noreferrer">
             <BsGithub />
             View Code
          </a>
@@ -27,7 +27,7 @@ const ProjectCard = ({
 
 const Projects = () => {
    return (
-      <div className="section project">
+      <div className="section project" id="projects">
          <h1>My Projects</h1>
          <div className="project_container">
             {Data.projects.map((project, index) => (

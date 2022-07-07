@@ -8,7 +8,7 @@ const projects = [
       subtitle:
          "A space launching website created to showcase the destinations, crews and techs used in space travel. It consists of 3 pages. The Figma design of the project was provided which was turned into a fully functional and responsive website using React JS.",
       preview: "https://space-travel-app.netlify.app/",
-      github: "",
+      github: "https://github.com/jibreel1/space-tourism-app",
    },
    {
       id: 2,
@@ -17,7 +17,7 @@ const projects = [
       subtitle:
          "A Restaurant Website created to showcase their services rendered. The Figma design of the project was provided which was turned into a fully functional and responsive website using React JS. ",
       preview: "https://gericht-food-app.netlify.app/",
-      github: "",
+      github: "https://github.com/jibreel1/gerichtfoodapp",
    },
    {
       id: 3,
@@ -26,7 +26,7 @@ const projects = [
       subtitle:
          "A basic Todo App created with pure Vanilla JS making me understand the DOM properties and other core concepts of Javascript",
       preview: "https://mamittodoapp.netlify.app/",
-      github: "",
+      github: "https://github.com/jibreel1/MAMIT-Todo-app",
    },
    {
       id: 4,
@@ -35,7 +35,7 @@ const projects = [
       subtitle:
          "This is a basic landing page created using React JS. It allowed me create flexible and reuseable components. I also understood the core concepts of React",
       preview: "https://fylo-website-page.netlify.app/",
-      github: "",
+      github: "https://github.com/jibreel1/fylo-landing-page",
    },
    {
       id: 5,
@@ -44,7 +44,7 @@ const projects = [
       subtitle:
          "A basic Todo App created with pure Vanilla JS making me understand the DOM properties and other core concepts of Javascript",
       preview: "https://calculator-tip-app.netlify.app/",
-      github: "",
+      github: "https://github.com/jibreel1/tip-calculator-app",
    },
 ];
 

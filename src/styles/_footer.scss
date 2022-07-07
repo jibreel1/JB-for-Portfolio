@@ -1,0 +1,118 @@
+.footer {
+   position: relative;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-direction: column;
+   gap: 1em;
+   background-color: $backgroundColor;
+   padding-top: 200px;
+   padding-bottom: 50px;
+
+   img {
+      //   position: fixed;
+      cursor: pointer;
+      width: 70px;
+   }
+
+   &_links {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      color: $colorBlue;
+
+      p {
+         font-family: $font-text;
+         font-size: 1.5em;
+         font-weight: bold;
+      }
+
+      &_social {
+         display: flex;
+         gap: 1em;
+
+         a {
+            font-size: 2em;
+
+            &:hover {
+               color: $thickBlue;
+            }
+         }
+      }
+   }
+
+   .footercard {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $colorWhite;
+      padding: 2em;
+      border: 5px solid $thickBlue;
+      border-image: none;
+      border-radius: 10px;
+      color: $colorBlue;
+      text-align: center;
+
+      min-width: 300px;
+      max-width: 850px;
+
+      @include point-up(large) {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 1.5em;
+
+         border: 10px solid;
+         //  border-image: url("../Assets/postcard_frame_1.png") 62 /12% 5% / 10px 10px
+         //     20px 10px round;
+      }
+
+      img {
+         width: 100%;
+         text-align: center;
+         display: none;
+
+         @include point-up(large) {
+            display: block;
+         }
+      }
+
+      &_content {
+         display: flex;
+         flex-direction: column;
+         gap: 1em;
+         font-family: $font-text;
+
+         h3 {
+            color: $thickBlue;
+            font-size: 1.5em;
+            font-family: $font-head;
+         }
+
+         p {
+            font-size: 1rem;
+            line-height: 1.5;
+            letter-spacing: 1px;
+
+            @include point-up(medium) {
+               font-size: 1.2rem;
+            }
+         }
+
+         a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+            // font-size: 1.2em;
+            font-weight: bold;
+            padding: 0.5em;
+            // background-color: $backgroundColor;
+            font-size: 1.5rem;
+            border-bottom: 1px solid $colorBlue;
+            border-left: 1px solid $colorBlue;
+            // max-width: 200px;
+         }
+      }
+   }
+}

@@ -3,7 +3,7 @@ import Images from "../constants/images";
 import { SiTailwindcss, SiMaterialui } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { FaReact, FaSass } from "react-icons/fa";
-import { BsBootstrapFill, BsGoogle } from "react-icons/bs";
+import { BsBootstrapFill } from "react-icons/bs";
 
 const Skills = () => {
    return (
@@ -25,7 +25,7 @@ const Skills = () => {
                   <SiMaterialui />
                   <FaSass />
                   <BsBootstrapFill />
-                  <BsGoogle />
+                  {/* <BsGoogle /> */}
                </div>
             </div>
             <div className="card">

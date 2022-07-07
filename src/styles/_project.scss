@@ -1,5 +1,6 @@
 .project {
-   padding-block: 100px;
+   padding-top: 100px;
+   padding-bottom: 200px;
    color: $colorBlue;
    font-family: $font-text;
 
@@ -35,9 +36,11 @@
       gap: 1.5em;
       border-radius: 8px;
       height: 100%;
-      transition: transform 0.5s ease-in-out;
+      box-shadow: 0 2px 4px $color-shadow;
+      transition: all 0.5s ease-in-out;
 
       &:hover {
+         box-shadow: 0 3px 6px $color-shadow;
          transform: scale(1.05);
       }
 
