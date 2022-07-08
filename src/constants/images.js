@@ -1,4 +1,5 @@
 import logo1 from "../Assets/logo_jb.png";
+import logo2 from "../Assets/logo_jbb.png";
 
 import hero1 from "../Assets/hero3.svg";
 import hero2 from "../Assets/hero4.svg";
@@ -15,6 +16,7 @@ import project_5 from "../Assets/project_5.png";
 
 const Images = {
    logo1,
+   logo2,
    hero1,
    hero2,
    front_dev,

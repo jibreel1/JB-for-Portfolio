@@ -36,7 +36,7 @@ const Navbar = () => {
    return (
       <>
          <nav className="section navbar">
-            <img src={Images.logo1} alt="logo" />
+            <img src={Images.logo2} alt="logo" />
             <ul className="navbar_links">
                {links.map(link => (
                   <li key={link.id}>
