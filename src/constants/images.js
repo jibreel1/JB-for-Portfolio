@@ -1,5 +1,5 @@
 import logo1 from "../Assets/logo_jb.png";
-import logo2 from "../Assets/logo_jbb.png";
+import logo2 from "../Assets/Jb.png";
 
 import hero1 from "../Assets/hero3.svg";
 import hero2 from "../Assets/hero4.svg";

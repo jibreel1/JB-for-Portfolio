@@ -11,9 +11,7 @@
    color: $colorBlue;
 
    img {
-      //   position: fixed;
-      cursor: pointer;
-      width: 70px;
+      width: 100px;
    }
 
    &_links {
@@ -42,9 +40,11 @@
 
          a {
             font-size: 1.5em;
+            transition: all 0.5s ease-in-out;
 
             &:hover {
                color: $thickBlue;
+               transform: scale(1.5);
             }
          }
       }
@@ -71,10 +71,20 @@
       top: 0;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: $colorWhite;
+      background-color: #e3dfc9;
       padding: 2em;
-      border: 5px solid $thickBlue;
-      border-image: none;
+      border: 10px solid $thickBlue;
+      border-image: repeating-linear-gradient(
+            45deg,
+            #323d7d,
+            #323d7d 1%,
+            white,
+            white 5%,
+            #a24558 1%,
+            #a24558 8%
+         )
+         10;
+      //   border-image: none;
       border-radius: 10px;
       text-align: center;
 
@@ -87,7 +97,7 @@
          align-items: center;
          gap: 1.5em;
 
-         border: 10px solid;
+         //  border: 10px solid;
          //  border-image: url("../Assets/postcard_frame_1.png") 62 /12% 5% / 10px 10px
          //     20px 10px round;
       }

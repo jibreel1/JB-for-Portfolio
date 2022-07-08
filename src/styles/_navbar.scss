@@ -5,22 +5,25 @@
    font-family: $font-text;
    padding-block: 1em;
    z-index: 2;
-   background-color: $colorBlue;
-   color: $backgroundColor;
+   background-color: $backgroundColor;
    // position: fixed;
    // width: 100%;
 
    img {
       //   position: fixed;
       cursor: pointer;
-      width: 50px;
+      width: 60px;
+
+      @include point-up(large) {
+         width: 100px;
+      }
    }
 
    &_links {
       align-items: center;
       list-style: none;
       gap: 1.5em;
-      color: $backgroundColor;
+      color: $colorBlue;
       display: none;
 
       @include point-up(large) {
@@ -32,6 +35,11 @@
          cursor: pointer;
          font-size: 1.3em;
          letter-spacing: 1.2px;
+         transition: transform 0.5s ease-in-out;
+
+         &:hover {
+            transform: scale(1.05);
+         }
 
          &::before {
             content: "";
@@ -60,8 +68,8 @@
       }
 
       li:last-child {
-         color: $colorBlue;
-         background-color: $backgroundColor;
+         color: $backgroundColor;
+         background-color: $colorBlue;
          padding: 0.8em 1.2em;
          border-radius: 5px;
          font-weight: bold;
@@ -83,8 +91,8 @@
       }
 
       svg {
-         color: $backgroundColor;
-         font-size: 2.5em;
+         color: $colorBlue;
+         font-size: 2em;
       }
    }
 }

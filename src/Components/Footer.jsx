@@ -29,7 +29,7 @@ const Footer = () => {
       <div className="section footer" id="contacts">
          <FooterCard />
          <div className="footer_links">
-            <img src={Images.logo1} alt="logo" />
+            <img src={Images.logo2} alt="logo" />
             {/* <p className="footer_copyright">&copy; Osunkoya Jubril 2022</p> */}
             <div className="footer_links_social">
                <a
