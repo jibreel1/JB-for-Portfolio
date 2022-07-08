@@ -4,13 +4,16 @@ import { BiLink } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 
 const ProjectCard = ({
-   project: { img, title, subtitle, preview, github },
+   project: { img, title, subtitle, preview, github, tech },
 }) => (
    <div className="project_card">
       <img src={img} alt="" />
       <div className="project_card_container">
          <h3 className="project_card_title">{title}</h3>
          <p className="project_card_text">{subtitle}</p>
+         <p>
+            <span>Tech Stack:</span> {tech}
+         </p>
       </div>
       <div className="project_card_preview">
          <a href={preview} target="_blank" rel="noopener noreferrer">

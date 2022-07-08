@@ -4,12 +4,10 @@
    align-items: center;
    font-family: $font-text;
    padding-block: 1em;
-   // z-index: 2;
+   z-index: 2;
    background-color: $backgroundColor;
-
-   @include point-up(large) {
-      padding-block: 2em;
-   }
+   // position: fixed;
+   // width: 100%;
 
    img {
       //   position: fixed;

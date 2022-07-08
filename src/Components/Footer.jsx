@@ -28,8 +28,9 @@ const Footer = () => {
    return (
       <div className="section footer" id="contacts">
          <FooterCard />
-         <img src={Images.logo1} alt="logo" />
          <div className="footer_links">
+            <img src={Images.logo1} alt="logo" />
+            {/* <p className="footer_copyright">&copy; Osunkoya Jubril 2022</p> */}
             <div className="footer_links_social">
                <a
                   href="mailto:osunkoyajubril6000@gmail.com"
@@ -62,7 +63,7 @@ const Footer = () => {
             </div>
          </div>
          <div className="line" />
-         <p>&copy; Osunkoya Jubril 2022</p>
+         <p className="footer_copyright">&copy; Osunkoya Jubril 2022</p>
       </div>
    );
 };

@@ -6,8 +6,9 @@
    flex-direction: column;
    gap: 1em;
    background-color: $backgroundColor;
-   padding-top: 200px;
+   padding-top: 250px;
    padding-bottom: 50px;
+   color: $colorBlue;
 
    img {
       //   position: fixed;
@@ -19,7 +20,15 @@
       display: flex;
       flex-direction: column;
       gap: 1em;
-      color: $colorBlue;
+
+      @include point-up(large) {
+         width: 100%;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         gap: 0;
+         padding: 0 7em;
+      }
 
       p {
          font-family: $font-text;
@@ -32,12 +41,28 @@
          gap: 1em;
 
          a {
-            font-size: 2em;
+            font-size: 1.5em;
 
             &:hover {
                color: $thickBlue;
             }
          }
+      }
+   }
+
+   .line {
+      width: 100%;
+      height: 1px;
+      background-color: $color-shadow;
+   }
+
+   &_copyright {
+      font-size: 1rem;
+      line-height: 1.5;
+      letter-spacing: 1px;
+
+      @include point-up(large) {
+         align-self: flex-end;
       }
    }
 
@@ -51,7 +76,6 @@
       border: 5px solid $thickBlue;
       border-image: none;
       border-radius: 10px;
-      color: $colorBlue;
       text-align: center;
 
       min-width: 300px;
@@ -60,6 +84,7 @@
       @include point-up(large) {
          display: grid;
          grid-template-columns: 1fr 1fr;
+         align-items: center;
          gap: 1.5em;
 
          border: 10px solid;
@@ -112,6 +137,11 @@
             border-bottom: 1px solid $colorBlue;
             border-left: 1px solid $colorBlue;
             // max-width: 200px;
+
+            &:hover {
+               border: none;
+               box-shadow: 0 3px 6px $color-shadow;
+            }
          }
       }
    }
