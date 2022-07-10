@@ -4,10 +4,20 @@ import Images from "../constants/images";
 const Aboutme = () => {
    return (
       <div className="section aboutme" id="about">
-         <div className="aboutme_img">
+         <div
+            className="aboutme_img"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+         >
             <img src={Images.hero2} alt="" />
          </div>
-         <div className="aboutme_content">
+         <div
+            className="aboutme_content"
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+         >
             <h1>About me...</h1>
             <p>I'm Osunkoya Jibreel, a Frontend developer and a Freelancer.</p>
             {/* <p>

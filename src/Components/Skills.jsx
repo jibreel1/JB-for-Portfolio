@@ -10,7 +10,12 @@ const Skills = () => {
       <div className="section skills">
          <h1>My Skills</h1>
          <div className="skills_card">
-            <div className="card">
+            <div
+               className="card"
+               data-aos="fade-right"
+               data-aos-easing="linear"
+               data-aos-duration="1500"
+            >
                <img src={Images.front_dev} alt="dev" />
                <h3>Frontend Development</h3>
                <p>
@@ -45,7 +50,12 @@ const Skills = () => {
                   {/* <BsGoogle /> */}
                </div>
             </div>
-            <div className="card">
+            <div
+               className="card"
+               data-aos="fade-left"
+               data-aos-easing="linear"
+               data-aos-duration="1500"
+            >
                <img src={Images.soft_skills} alt="softskills" />
                <h3>Soft Skills</h3>
                <p>Creative Thinking</p>

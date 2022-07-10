@@ -6,7 +6,7 @@ import { BsGithub } from "react-icons/bs";
 const ProjectCard = ({
    project: { img, title, subtitle, preview, github, tech },
 }) => (
-   <div className="project_card">
+   <div className="project_card" data-aos="zoom-in" data-aos-duration="1500">
       <img src={img} alt="" />
       <div className="project_card_container">
          <h3 className="project_card_title">{title}</h3>

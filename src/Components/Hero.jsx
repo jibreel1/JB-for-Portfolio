@@ -6,10 +6,20 @@ import { FaLinkedin } from "react-icons/fa";
 const Hero = () => {
    return (
       <div className="section hero">
-         <div className="hero_img">
+         <div
+            className="hero_img"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+         >
             <img src={Images.hero1} alt="" />
          </div>
-         <div className="hero_content">
+         <div
+            className="hero_content"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+         >
             <span>Hello!</span>
             <h1>
                I'm Jibreel... <span>a Frontend Developer</span>
