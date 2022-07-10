@@ -6,16 +6,16 @@ const Aboutme = () => {
       <div className="section aboutme" id="about">
          <div
             className="aboutme_img"
-            data-aos="fade-right"
-            data-aos-easing="linear"
+            data-aos="fade-up"
+            // data-aos-easing="linear"
             data-aos-duration="1500"
          >
             <img src={Images.hero2} alt="" />
          </div>
          <div
             className="aboutme_content"
-            data-aos="fade-left"
-            data-aos-easing="linear"
+            data-aos="fade-up"
+            // data-aos-easing="linear"
             data-aos-duration="1500"
          >
             <h1>About me...</h1>

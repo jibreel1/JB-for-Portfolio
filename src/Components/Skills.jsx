@@ -12,7 +12,7 @@ const Skills = () => {
          <div className="skills_card">
             <div
                className="card"
-               data-aos="fade-right"
+               data-aos="fade-up"
                data-aos-easing="linear"
                data-aos-duration="1500"
             >
@@ -52,7 +52,7 @@ const Skills = () => {
             </div>
             <div
                className="card"
-               data-aos="fade-left"
+               data-aos="fade-up"
                data-aos-easing="linear"
                data-aos-duration="1500"
             >
