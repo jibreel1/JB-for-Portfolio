@@ -4,7 +4,7 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
-   const [showSidebar, setShowSidebar] = useState(false);
+   const [showMenubar, setShowMenubar] = useState(false);
 
    const links = [
       {
@@ -30,13 +30,21 @@ const Navbar = () => {
    ];
 
    const closeSideBar = () => {
-      setShowSidebar(false);
+      setShowMenubar(false);
    };
 
    return (
       <>
          <nav className="section navbar">
             <img src={Images.logo2} alt="logo" />
+            <div
+               className="navbar_ham"
+               onClick={() => {
+                  setShowMenubar(!showMenubar);
+               }}
+            >
+               <HiOutlineMenuAlt2 />
+            </div>
             <ul className="navbar_links">
                {links.map(link => (
                   <li key={link.id}>
@@ -44,16 +52,8 @@ const Navbar = () => {
                   </li>
                ))}
             </ul>
-            <div
-               className="navbar_ham"
-               onClick={() => {
-                  setShowSidebar(!showSidebar);
-               }}
-            >
-               <HiOutlineMenuAlt2 />
-            </div>
+            {showMenubar && <Sidebar close={closeSideBar} links={links} />}
          </nav>
-         {showSidebar && <Sidebar close={closeSideBar} links={links} />}
       </>
    );
 };

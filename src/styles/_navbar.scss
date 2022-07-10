@@ -4,6 +4,7 @@
    align-items: center;
    font-family: $font-text;
    padding-top: 0.5em;
+   padding-bottom: 0.5em;
    z-index: 2;
    background-color: hsla(356, 68%, 95%, 0.5);
    position: fixed;
@@ -24,10 +25,14 @@
    }
 
    &_links {
+      // display: flex;
       align-items: center;
+      text-align: center;
       list-style: none;
       gap: 1.5em;
       color: $colorBlue;
+      padding: 1em 2em;
+      border-radius: 8px;
       display: none;
 
       @include point-up(large) {
@@ -77,6 +82,11 @@
          padding: 0.8em 1.2em;
          border-radius: 5px;
          font-weight: bold;
+         // margin-bottom: 1em;
+
+         @include point-up(large) {
+            margin-bottom: 0;
+         }
 
          &::before {
             content: none;
@@ -85,11 +95,14 @@
    }
 
    &_ham {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+      // position: absolute;
+      // top: 1.5em;
+      // right: 2em;
       cursor: pointer;
 
+      @include point-up(medium) {
+         right: 4em;
+      }
       @include point-up(large) {
          display: none;
       }
