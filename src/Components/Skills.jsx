@@ -18,13 +18,30 @@ const Skills = () => {
                   elegant and well structured websites.
                </p>
                <h4>Tools I work with</h4>
-               <div>
-                  <DiJavascript1 />
-                  <FaReact />
-                  <SiTailwindcss />
-                  <SiMaterialui />
-                  <FaSass />
-                  <BsBootstrapFill />
+               <div className="card_skills">
+                  <span className="card_skill">
+                     <DiJavascript1 />
+                     JavaScript
+                  </span>
+                  <span className="card_skill">
+                     <FaReact />
+                     React
+                  </span>
+                  <span className="card_skill">
+                     <SiTailwindcss />
+                     Tailwind CSS
+                  </span>
+                  <span className="card_skill">
+                     <SiMaterialui />
+                     Material UI
+                  </span>
+                  <span className="card_skill">
+                     <FaSass /> SASS
+                  </span>
+                  <span className="card_skill">
+                     <BsBootstrapFill /> Bootstrap CSS
+                  </span>
+
                   {/* <BsGoogle /> */}
                </div>
             </div>

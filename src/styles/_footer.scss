@@ -11,7 +11,11 @@
    color: $colorBlue;
 
    img {
-      width: 100px;
+      width: 60px;
+
+      @include point-up(large) {
+         width: 100px;
+      }
    }
 
    &_links {

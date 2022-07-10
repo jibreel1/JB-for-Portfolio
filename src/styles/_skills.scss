@@ -43,6 +43,33 @@
          &:hover {
             transform: scale(1.05);
          }
+         &_skills {
+            // display: grid;
+            gap: 0.5em;
+         }
+
+         &_skill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 0.5em;
+
+            background-color: $colorBlue;
+            color: $backgroundColor;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            font-size: 1rem;
+
+            @include point-up(large) {
+               font-size: 1rem;
+            }
+
+            &:not(:last-child) {
+               margin-right: 1em;
+               margin-bottom: 1em;
+            }
+         }
 
          @include point-up(large) {
             display: flex;
@@ -50,7 +77,7 @@
             justify-content: center;
             align-items: center;
             width: 450px;
-            height: 600px;
+            // height: 600px;
          }
 
          h3 {
