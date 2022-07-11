@@ -75,7 +75,7 @@
       top: 0;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: #fbfaf9;
+      background-color: #323d7d;
       padding: 2em;
       border: 10px solid $thickBlue;
       border-image: repeating-linear-gradient(
@@ -90,12 +90,13 @@
          10;
       //   border-image: none;
       border-radius: 10px;
+      box-shadow: 0 3px 8px $color-shadow;
       text-align: center;
 
       min-width: 300px;
       max-width: 850px;
 
-      @include point-up(large) {
+      @include point-up(xlarge) {
          display: grid;
          grid-template-columns: 1fr 1fr;
          align-items: center;
@@ -111,7 +112,7 @@
          text-align: center;
          display: none;
 
-         @include point-up(large) {
+         @include point-up(xlarge) {
             display: block;
          }
       }
@@ -123,12 +124,13 @@
          font-family: $font-text;
 
          h3 {
-            color: $thickBlue;
+            color: $backgroundColor;
             font-size: 1.5em;
             font-family: $font-head;
          }
 
          p {
+            color: $backgroundColor;
             font-size: 1rem;
             line-height: 1.5;
             letter-spacing: 1px;
@@ -148,9 +150,13 @@
             padding: 0.5em;
             // background-color: $backgroundColor;
             font-size: 1.5rem;
-            border-bottom: 1px solid $colorBlue;
-            border-left: 1px solid $colorBlue;
+            border-bottom: 1px solid $backgroundColor;
+            border-left: 1px solid $backgroundColor;
             // max-width: 200px;
+            color: $backgroundColor;
+
+            @include point-up(large) {
+            }
 
             &:hover {
                border: none;
