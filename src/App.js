@@ -6,12 +6,7 @@ import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 
-import AOS from "aos";
-
-import "aos/dist/aos.css";
 import "./styles/styles.scss";
-
-AOS.init();
 
 const App = () => {
    return (

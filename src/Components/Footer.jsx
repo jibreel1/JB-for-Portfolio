@@ -4,12 +4,7 @@ import { BsGithub, BsTwitter } from "react-icons/bs";
 import { FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const FooterCard = () => (
-   <div
-      style={{ transform: "translate(-50%, -50%)" }}
-      className="footercard"
-      data-aos="zoom-in"
-      data-aos-duration="1500"
-   >
+   <div className="footercard">
       <img src={Images.contact_us} alt="contact" />
       <div className="footercard_content">
          <h3>Get In Touch</h3>

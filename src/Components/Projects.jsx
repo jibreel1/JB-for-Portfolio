@@ -3,29 +3,33 @@ import Data from "../constants/data";
 import { BiLink } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 
+import { Zoom } from "react-awesome-reveal";
+
 const ProjectCard = ({
    project: { img, title, subtitle, preview, github, tech },
 }) => (
-   <div className="project_card" data-aos="zoom-in" data-aos-duration="1500">
-      <img src={img} alt="" />
-      <div className="project_card_container">
-         <h3 className="project_card_title">{title}</h3>
-         <p className="project_card_text">{subtitle}</p>
-         <p>
-            <span>Tech Stack:</span> {tech}
-         </p>
+   <Zoom>
+      <div className="project_card">
+         <img src={img} alt="" />
+         <div className="project_card_container">
+            <h3 className="project_card_title">{title}</h3>
+            <p className="project_card_text">{subtitle}</p>
+            <p>
+               <span>Tech Stack:</span> {tech}
+            </p>
+         </div>
+         <div className="project_card_preview">
+            <a href={preview} target="_blank" rel="noopener noreferrer">
+               <BiLink />
+               Live Preview
+            </a>
+            <a href={github} target="_blank" rel="noopener noreferrer">
+               <BsGithub />
+               View Code
+            </a>
+         </div>
       </div>
-      <div className="project_card_preview">
-         <a href={preview} target="_blank" rel="noopener noreferrer">
-            <BiLink />
-            Live Preview
-         </a>
-         <a href={github} target="_blank" rel="noopener noreferrer">
-            <BsGithub />
-            View Code
-         </a>
-      </div>
-   </div>
+   </Zoom>
 );
 
 const Projects = () => {

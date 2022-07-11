@@ -1,5 +1,6 @@
 import React from "react";
 import { HiOutlineX } from "react-icons/hi";
+
 const Sidebar = ({ close, links }) => {
    return (
       <div className="sidebar">
