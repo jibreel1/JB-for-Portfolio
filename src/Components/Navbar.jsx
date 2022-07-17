@@ -29,8 +29,8 @@ const Navbar = () => {
       },
    ];
 
-   const closeSideBar = () => {
-      setShowMenubar(false);
+   const ToggleSidebar = () => {
+      showMenubar === true ? setShowMenubar(false) : setShowMenubar(true);
    };
 
    return (
@@ -52,7 +52,12 @@ const Navbar = () => {
                   </li>
                ))}
             </ul>
-            {showMenubar && <Sidebar close={closeSideBar} links={links} />}
+
+            <Sidebar
+               toggle={ToggleSidebar}
+               links={links}
+               showMenu={showMenubar}
+            />
          </nav>
       </>
    );
