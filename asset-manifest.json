@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.74a4677a.css",
+    "main.js": "/my-portfolio/static/js/main.b4f000b6.js",
+    "static/media/project_2.png": "/my-portfolio/static/media/project_2.a5d754832d349d5099e4.png",
+    "static/media/project_1.png": "/my-portfolio/static/media/project_1.364943da08f1d1491230.png",
+    "static/media/Jb.png": "/my-portfolio/static/media/Jb.447109398675d5981c4d.png",
+    "static/media/project_4.png": "/my-portfolio/static/media/project_4.ae5e83582c44c39e045b.png",
+    "static/media/project_3.png": "/my-portfolio/static/media/project_3.0318f71cd3b0ff2eca52.png",
+    "static/media/project_5.png": "/my-portfolio/static/media/project_5.240a3f41fe7f2541dd1b.png",
+    "static/media/hero3.svg": "/my-portfolio/static/media/hero3.16ce42252e92c15a55f9f156bbcf8a6e.svg",
+    "static/media/logo_jb.png": "/my-portfolio/static/media/logo_jb.63723072387440fe1600.png",
+    "static/media/hero4.svg": "/my-portfolio/static/media/hero4.62a6a2e36167da9c029a807da20af7e7.svg",
+    "static/media/contact_us.svg": "/my-portfolio/static/media/contact_us.13c80369250d8f0aff509318d9d484eb.svg",
+    "static/media/soft_skills.svg": "/my-portfolio/static/media/soft_skills.6a41baa0770036bd9a71730c2b7fc481.svg",
+    "static/media/code_review.svg": "/my-portfolio/static/media/code_review.a7dadee261ce10a12ae01e811208fda8.svg",
+    "index.html": "/my-portfolio/index.html",
+    "main.74a4677a.css.map": "/my-portfolio/static/css/main.74a4677a.css.map",
+    "main.b4f000b6.js.map": "/my-portfolio/static/js/main.b4f000b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74a4677a.css",
+    "static/js/main.b4f000b6.js"
+  ]
+}
