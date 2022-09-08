@@ -22,11 +22,6 @@ const Navbar = () => {
          name: "Contacts",
          path: "#contacts",
       },
-      {
-         id: "4",
-         name: "My Résumé",
-         path: "https://drive.google.com/file/d/1wsv3Suy-ha2r62MOUdkvnnePW04851Yy/view?usp=sharing",
-      },
    ];
 
    const ToggleSidebar = () => {
@@ -51,6 +46,15 @@ const Navbar = () => {
                      <a href={link.path}>{link.name}</a>
                   </li>
                ))}
+               <li>
+                  <a
+                     href="https://drive.google.com/file/d/14TYyZRVmp2V-MfF8yyepyKneh6Gf_aov/view?usp=sharing"
+                     target="_blank"
+                     rel="noreferrer"
+                  >
+                     My Résumé
+                  </a>
+               </li>
             </ul>
 
             <Sidebar
