@@ -13,6 +13,15 @@ const Sidebar = ({ toggle, links, showMenu }) => {
                   <a href={link.path}>{link.name}</a>
                </li>
             ))}
+            <li>
+               <a
+                  href="https://drive.google.com/file/d/14TYyZRVmp2V-MfF8yyepyKneh6Gf_aov/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+               >
+                  My Résumé
+               </a>
+            </li>
          </ul>
       </div>
    );
