@@ -1,6 +1,11 @@
 import React from "react";
 import Images from "../constants/images";
-import { SiTailwindcss, SiMaterialui } from "react-icons/si";
+import {
+   SiTailwindcss,
+   SiMaterialui,
+   SiFirebase,
+   SiGraphql,
+} from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { FaReact, FaSass } from "react-icons/fa";
 import { BsBootstrapFill } from "react-icons/bs";
@@ -23,26 +28,34 @@ const Skills = () => {
                   <h4>Tools I work with</h4>
                   <div className="card_skills">
                      <span className="card_skill">
-                        <DiJavascript1 />
-                        JavaScript
-                     </span>
-                     <span className="card_skill">
                         <FaReact />
                         React
-                     </span>
-                     <span className="card_skill">
-                        <SiTailwindcss />
-                        Tailwind CSS
                      </span>
                      <span className="card_skill">
                         <SiMaterialui />
                         Material UI
                      </span>
                      <span className="card_skill">
-                        <FaSass /> SASS
+                        <DiJavascript1 />
+                        JavaScript
+                     </span>
+                     <span className="card_skill">
+                        <SiTailwindcss />
+                        Tailwind CSS
                      </span>
                      <span className="card_skill">
                         <BsBootstrapFill /> Bootstrap CSS
+                     </span>
+                     <span className="card_skill">
+                        <SiFirebase />
+                        Firebase
+                     </span>
+                     <span className="card_skill">
+                        <SiGraphql />
+                        Graphql
+                     </span>
+                     <span className="card_skill">
+                        <FaSass /> SASS
                      </span>
 
                      {/* <BsGoogle /> */}
