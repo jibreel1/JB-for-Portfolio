@@ -3,6 +3,16 @@ import Images from "./images";
 const projects = [
    {
       id: 1,
+      img: Images.readr,
+      title: "READR",
+      subtitle:
+         "Readr is a social reading application for sharing your reading experience with friends family and co-workers. Allows you chat with your loved ones about the book you're reading. Enrich your reading experience and strengthen your relationships.",
+      preview: "https://crowd-readr.netlify.app/",
+      github: "https://github.com/jibreel1/readr",
+      tech: "React, Javascript, Firebase, Material UI, SASS",
+   },
+   {
+      id: 2,
       img: Images.nutrifeed,
       title: "Nutrifeed",
       subtitle:
@@ -12,7 +22,7 @@ const projects = [
       tech: "React, Javascript, Firebase, Material UI, SASS",
    },
    {
-      id: 2,
+      id: 3,
       img: Images.project_1,
       title: "Space Tourism",
       subtitle:
@@ -22,7 +32,7 @@ const projects = [
       tech: "React, Javascript, SASS",
    },
    {
-      id: 3,
+      id: 4,
       img: Images.project_2,
       title: "Gericht Restaurant",
       subtitle:
@@ -30,16 +40,6 @@ const projects = [
       preview: "https://gericht-food-app.netlify.app/",
       github: "https://github.com/jibreel1/gerichtfoodapp",
       tech: "React, Javascript, CSS",
-   },
-   {
-      id: 4,
-      img: Images.project_3,
-      title: "MAMIT Todo App",
-      subtitle:
-         "A basic Todo App created with pure Vanilla JS making me understand the DOM properties and other core concepts of Javascript",
-      preview: "https://mamittodoapp.netlify.app/",
-      github: "https://github.com/jibreel1/MAMIT-Todo-app",
-      tech: "Javascript, CSS, HTML",
    },
 ];
 

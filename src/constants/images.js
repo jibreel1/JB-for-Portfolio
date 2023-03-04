@@ -12,6 +12,7 @@ import project_1 from "../Assets/project_1.png";
 import project_2 from "../Assets/project_2.png";
 import project_3 from "../Assets/project_3.png";
 import nutrifeed from "../Assets/nutrifeed1.png";
+import readr from "../Assets/readr.png";
 
 const Images = {
    logo1,
@@ -25,6 +26,7 @@ const Images = {
    project_3,
    contact_us,
    nutrifeed,
+   readr,
 };
 
 export default Images;
